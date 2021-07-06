@@ -37,6 +37,10 @@ body {
   margin: 0;
 }
 
+.menu {
+  position: relative;
+}
+
 .menu li {
   list-style: none;
     font-size: 18px;
