@@ -38,7 +38,9 @@ body {
 }
 
 .menu {
-  position: relative;
+  position: fixed;
+  font-weight: lighter;
+  width: 200px;
 }
 
 .menu li {
@@ -354,7 +356,7 @@ iframe {
 .cursor-dot {
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: red;
 }
 
 .cursor-dot-outline {
