@@ -41,6 +41,7 @@ body {
   position: fixed;
   font-weight: lighter;
   width: 200px;
+  top: 180px;
 }
 
 .menu li {
@@ -334,6 +335,9 @@ iframe {
   }
   .timeline .swiper-slide-active .timeline-yt{
     margin-left: -50px;
+  }
+  .menu {
+    top: 620px;
   }
 }
 
