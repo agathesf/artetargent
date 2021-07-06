@@ -354,7 +354,7 @@ iframe {
 .cursor-dot {
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: blue;
 }
 
 .cursor-dot-outline {
