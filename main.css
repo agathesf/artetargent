@@ -158,6 +158,21 @@ body {
   pointer-events: none;
 }
 
+.back {
+  position: absolute;
+  top: 18px;
+    z-index: 1000;
+    left: 25%;
+    color: red;
+  text-decoration: none;
+}
+
+.back:hover > p::before {
+  content: '\002190';
+  margin-right: 10px;
+  display: inline;
+}
+
 ///////////////////////////////
 
 .timeline {
@@ -192,15 +207,27 @@ body {
 }
 .timeline .swiper-slide-content {
   position: absolute;
-  text-align: center;
+  text-align: left;
   width: 80%;
-  max-width: 310px;
+  max-width: 350px;
   right: 50%;
   top: 13%;
   transform: translate(50%, 0);
   font-size: 12px;
   z-index: 2;
 }
+
+.timeline-link {
+  color: red;
+  text-decoration: none;
+}
+
+.timeline-link:hover > p::after {
+  content: '\002192';
+  margin-left: 10px;
+  display: inline;
+}
+
 .timeline .swiper-slide .timeline-year {
   display: block;
   font-style: italic;
@@ -271,7 +298,7 @@ iframe:hover {
 }
 
 .timeline .swiper-pagination {
-  right: 15% !important;
+  right: 10% !important;
   height: 100%;
   display: none;
   flex-direction: column;
@@ -284,7 +311,7 @@ iframe:hover {
 .timeline .swiper-pagination::before {
   content: "";
   position: absolute;
-  left: -30px;
+  left: -50px;
   top: 0;
   height: 100%;
   width: 1px;
@@ -293,7 +320,7 @@ iframe:hover {
 .timeline .swiper-pagination-bullet {
   width: auto;
   height: auto;
-  text-align: center;
+  text-align: left;
   opacity: 1;
   background: transparent;
   color: black;
@@ -304,7 +331,7 @@ iframe:hover {
   content: "";
   position: absolute;
   top: 5px;
-  left: -37px;
+  left: -58px;
   width: 16px;
   height: 16px;
   border-radius: 100%;
@@ -354,7 +381,7 @@ iframe:hover {
     right: 30%;
     top: 50%;
     transform: translateY(-50%);
-    width: 310px;
+    width: 350px;
     font-size: 11px;
     text-align: right;
   }
@@ -399,7 +426,7 @@ iframe:hover {
     box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0);
   }
   .timeline .swiper-slide-content {
-    right: 25%;
+    right: 30%;
   }
 }
 
