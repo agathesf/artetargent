@@ -1,5 +1,6 @@
 var modal = document.getElementById('wrapper-p');
 var buttonModal = document.getElementById('wrapper');
+var cross = document.getElementById('close');
 
 console.log('hello');
 buttonModal.addEventListener("click", function() {
@@ -8,10 +9,10 @@ buttonModal.addEventListener("click", function() {
 
     modal.classList.remove('hide');
     modal.classList.add('display');
-    // cross.addEventListener("click", function() {
-    //     wrapper.classList.remove('display');
-    //     wrapper.classList.add('hide');
-    // });
+    cross.addEventListener("click", function() {
+        modal.classList.remove('display');
+        modal.classList.add('hide');
+    });
  });
 
 var dropdown = document.getElementsByClassName("dropdown-btn");
