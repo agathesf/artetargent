@@ -224,10 +224,17 @@ body {
 .modal{
   padding : 20px 40px;
   box-shadow : 3px 3px 3px 3px #e5e5e5
+  background: whitesmoke;
+  height: 100vh;
 }
 
 .display{
-  display: inherit;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 10000;
 }
 
 .hide{
