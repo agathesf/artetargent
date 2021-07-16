@@ -33,7 +33,7 @@ body {
 
 .second-title {
   line-height: 18px;
-  font-size: 12px;
+  font-size: 11px;
     margin: 0;
     letter-spacing: 1.5px;
     margin-top: 0px;
@@ -310,7 +310,7 @@ iframe:hover {
 }
 
 .timeline .swiper-pagination {
-  right: 10% !important;
+  right: 2% !important;
   height: 100%;
   display: none;
   flex-direction: column;
@@ -390,7 +390,7 @@ iframe:hover {
     /*box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.1);*/
   }
   .timeline .swiper-slide-content {
-    right: 30%;
+    right: 32%;
     top: 50%;
     transform: translateY(-50%);
     width: 350px;
@@ -438,7 +438,7 @@ iframe:hover {
     box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0);
   }
   .timeline .swiper-slide-content {
-    right: 30%;
+    right: 32%;
   }
 }
 
