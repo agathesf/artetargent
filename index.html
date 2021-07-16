@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ART&ARGENT</title>
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
@@ -40,11 +40,13 @@
 					<li class="dropbtn">équipe<div class="swiper-button-next"></div></li>
 					<div class="dropdown-content">
 						<span style="margin-bottom: 10px"><strong>Colloque sous la direction de :</strong></span>
-						<span><button id="open" onclick="openModal">Patrice Baubeau</button></span>
+						<span><button class="modal-link" id="modal">Patrice Baubeau</button></span>
 						<span>Martial Poirson</span>
 						<span>Yann Toma</span>
+
 					</div>
 				</div>
+
 				<div class="dropdown">
 					<li class="dropbtn"><a href="index.html" class="timeline-link">programme</a><div class="swiper-button-next"></div></li>
 				</div>
@@ -199,26 +201,19 @@
 
 	</div>
 
-	<!-- partial -->
-<!-- 	  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script><script  src="./script.js"></script>
- -->
-	</body>
-
-
-	<div class="modal" id="b">
-	  <div class="header">
-	    <a href="#" class="cancel">X</a>
-	  </div>
-	  <div class="content">
-	    <p>blablabla</p>
-	  </div>
+	<div class="modal hide" id="modal">
+	  <button class="button" id="close">X</button>
+	  <h2>This is modal title</h2>
+	  <p>This is modal text</p>
 	</div>
-
 
 	<div class="cursor-dot-outline"></div>
 	<div class="cursor-dot"></div>
-	<script src="script.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script><script  src="./script.js"></script>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+	<script  src="script.js"></script>
+
+	</body>
 
 
 </html>

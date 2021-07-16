@@ -1,3 +1,17 @@
+var modal = document.getElementById('modal');
+console.log('hello')
+modal.addEventListener("click", function() {
+    console.log('hello')
+  // var el = document.getElementById('close');
+  // var wrapper = document.getElementById('wrapper');
+  modal.classList.add('display');
+  modal.classList.remove('hide');
+  // el.addEventListener("click", function() {
+  //   modal.classList.remove('display');
+  //   modal.classList.add('hide');
+  // });
+ });
+
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -30,15 +44,6 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
       direction: 'horizontal',
     }
   }
-});
-
-$("#open").click(function(){
-     $("#b").css("display","block");
-                 });
-
-
-$(".cancel").click(function(){
-     $("#b").fadeOut();
 });
 
 var cursor = {
