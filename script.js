@@ -1,15 +1,17 @@
-var modal = document.getElementById('modal');
-console.log('hello')
-modal.addEventListener("click", function() {
-    console.log('hello')
-  // var el = document.getElementById('close');
-  // var wrapper = document.getElementById('wrapper');
-  modal.classList.add('display');
-  modal.classList.remove('hide');
-  // el.addEventListener("click", function() {
-  //   modal.classList.remove('display');
-  //   modal.classList.add('hide');
-  // });
+var modal = document.getElementById('wrapper-p');
+var buttonModal = document.getElementById('wrapper');
+
+console.log('hello');
+buttonModal.addEventListener("click", function() {
+    console.log('hello');
+    var cross = document.getElementById('close');
+
+    modal.classList.remove('hide');
+    modal.classList.add('display');
+    // cross.addEventListener("click", function() {
+    //     wrapper.classList.remove('display');
+    //     wrapper.classList.add('hide');
+    // });
  });
 
 var dropdown = document.getElementsByClassName("dropdown-btn");
