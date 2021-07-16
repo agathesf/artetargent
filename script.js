@@ -32,6 +32,15 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   }
 });
 
+$("#open").click(function(){
+     $("#b").css("display","block");
+                 });
+
+
+$(".cancel").click(function(){
+     $("#b").fadeOut();
+});
+
 var cursor = {
     delay: 2,
     _x: 0,

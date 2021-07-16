@@ -43,7 +43,7 @@ body {
 .logo-wrapper {
   position: absolute;
   left: 6.5%;
-  bottom: 12px;
+  bottom: 15px;
   z-index: 10000;
   display: grid;
 }
@@ -124,9 +124,14 @@ body {
   color: red;
 }
 
+.dropdown:hover .dropdown-content-intervenant {
+  display: inherit !important;
+  color: red;
+}
+
 .language {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 30px;
   display: flex;
   z-index: 100;
@@ -179,6 +184,8 @@ body {
     left: 25%;
     color: red;
   text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .back:hover > p::before {
@@ -186,6 +193,59 @@ body {
   margin-right: 10px;
   display: inline;
 }
+
+.next {
+  position: absolute;
+  top: 18px;
+    z-index: 1000;
+    right: 32%;
+    color: red;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.next:hover > p::after {
+  content: '\002192';
+  margin-left: 10px;
+  display: inline;
+}
+
+///////////////////////////////
+
+.modal{
+  display: none;
+  top: 0;
+  width: 270px;
+  height: 100vh;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 40001;
+  background: #fff;
+  box-shadow: 0px 0px 10px #000;
+  animation-name: fadeIn_Modal;
+  animation-duration: 0.8s;
+ 
+}
+
+.header{
+  width: 100%;
+}
+
+.header a{
+  text-decoration: none;
+  float: right;
+  line-height: 70px;
+  margin-right: 20px;
+  color: #aaa;
+}
+
+.content{
+  width: 30%;
+}
+
 
 ///////////////////////////////
 
@@ -331,6 +391,10 @@ iframe:hover {
   width: 1px;
   background-color: black;
 }
+
+span.swiper-pagination-bullet {
+  width: 325px !important;
+}
 .timeline .swiper-pagination-bullet {
   width: auto;
   height: auto;
@@ -340,6 +404,7 @@ iframe:hover {
   color: black;
   margin: 15px 0 !important;
   position: relative;
+  font-size: 16px;
 }
 .timeline .swiper-pagination-bullet::before {
   content: "";
@@ -354,7 +419,7 @@ iframe:hover {
   transition: 0.2s;
 }
 .timeline .swiper-pagination-bullet-active {
-  color: black;
+  color: red;
 }
 .timeline .swiper-pagination-bullet-active::before {
   transform: scale(1);
