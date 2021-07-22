@@ -42,16 +42,20 @@ body {
 
 .logo-wrapper {
   position: absolute;
-  left: 6.5%;
-  bottom: 15px;
+  left: 6%;
+  bottom: 20px;
   z-index: 10000;
   display: grid;
 }
 
 .logo-wrapper img {
-  max-height: 30px;
+  max-height: 35px;
   padding : 5px;
   margin: 0 auto;
+}
+
+.logo-wrapper #sorbonne {
+  max-height: 50px;
 }
 
 .menu-container {
@@ -214,31 +218,70 @@ body {
 ///////////////////////////////
 
 .modal-link{
-  padding : 10px 15px;
+  padding : 0;
   border : none;
-  border-radius : 5px;
-  background:#333;
-  color:#eee;
+  border-radius : 0px;
+  background: none;
+  /*color:#eee;*/
+}
+
+#wrapper {
+  color: red;
+  padding : 0;
+  border : none;
+  border-radius : 0px;
+  background: none;
+  font-weight: lighter;
+  font-family: 'Open Sans';
+}
+
+#close {
+  color: red;
+  padding : 0;
+  border : none;
+  border-radius : 0px;
+  background: none;
+  font-weight: lighter;
+  font-family: 'Open Sans';
+}
+
+#wrapper:hover::after {
+    content: '\002192';
+  margin-left: 10px;
+  display: inline;
 }
 
 .modal{
-  padding : 20px 40px;
-  box-shadow : 3px 3px 3px 3px #e5e5e5
+  box-shadow: 0px 5px 45px 5px rgba(0, 0, 0, 0.05);
   background: whitesmoke;
   height: 100vh;
+  width: 400px;
 }
 
 .display{
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
-  height: 100vh;
-  z-index: 10000;
+  left: 320px;
+  z-index: 1;
+  animation: slide-in 0.3s;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 320px;
+  }
 }
 
 .hide{
   display: none;
+}
+
+.modal-content {
+  padding: 30px;
 }
 
 
