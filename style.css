@@ -184,7 +184,7 @@ body {
 .back {
   position: absolute;
   top: 18px;
-    z-index: 1000;
+    z-index: 1;
     left: 25%;
     color: red;
   text-decoration: none;
@@ -201,7 +201,7 @@ body {
 .next {
   position: absolute;
   top: 18px;
-    z-index: 1000;
+    z-index: 1;
     right: 32%;
     color: red;
   text-decoration: none;
@@ -263,7 +263,7 @@ body {
   position: absolute;
   top: 0;
   left: 320px;
-  z-index: 1;
+  z-index: 9;
   animation: slide-in 0.3s;
 }
 
@@ -442,7 +442,7 @@ span.swiper-pagination-bullet {
   color: black;
   margin: 15px 0 !important;
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
 }
 .timeline .swiper-pagination-bullet::before {
   content: "";
