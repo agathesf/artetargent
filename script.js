@@ -1,5 +1,6 @@
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
+console.log("coucou");
 
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
