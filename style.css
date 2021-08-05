@@ -492,6 +492,7 @@ span.swiper-pagination-bullet {
 .timeline .swiper-button-next:hover {
   transform: translateX(3px);
 }
+
 @media screen and (min-width: 768px) {
   .timeline .swiper-slide::after {
     right: -30%;
@@ -504,7 +505,7 @@ span.swiper-pagination-bullet {
     right: 32%;
     top: 50%;
     transform: translateY(-50%);
-    width: 350px;
+    width: 290px;
     font-size: 11px;
     text-align: right;
   }
@@ -580,6 +581,9 @@ span.swiper-pagination-bullet {
   }
   .menu {
     top: 620px;
+  }
+  span.swiper-pagination-bullet {
+    width: 207px !important;
   }
 }
 
